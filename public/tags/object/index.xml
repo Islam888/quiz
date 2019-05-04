@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Object on Quiz</title>
+    <link>http://example.org/tags/object/</link>
+    <description>Recent content in Object on Quiz</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 04 May 2019 09:48:16 +0200</lastBuildDate>
+    
+	<atom:link href="http://example.org/tags/object/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Q1</title>
+      <link>http://example.org/js/q1/</link>
+      <pubDate>Sat, 04 May 2019 09:48:16 +0200</pubDate>
+      
+      <guid>http://example.org/js/q1/</guid>
+      <description>Suppose the recruiter of your company asked you to create a function to:
+ Select candidates that are from a certain country. Then sort them escendly by years of experience.  //Here is an array of candidates. const candidates = [{ name: &amp;#34;Jane Austen&amp;#34;, age: 33, country: &amp;#34;US&amp;#34;, yearsOfExperience: 4 }, { name: &amp;#34;Virginia Woolf&amp;#34;, age: 40, country: &amp;#34;UK&amp;#34;, yearsOfExperience: 6 }, { name: &amp;#34;Edgar Allan Poe&amp;#34;, age: 28, country: &amp;#34;US&amp;#34;, yearsOfExperience: 3 }, { name: &amp;#34;Charlotte Brontë&amp;#34;, age: 25, country: &amp;#34;UK&amp;#34;, yearsOfExperience: 3 }, { name: &amp;#34;Emily Brontë&amp;#34;, age: 23, country: &amp;#34;UK&amp;#34;, yearsOfExperience: 2 }, { name: &amp;#34;Charles Dickens&amp;#34;, age: 42, country: &amp;#34;UK&amp;#34;, yearsOfExperience: 8 }, { name: &amp;#34;H.</description>
+    </item>
+    
+  </channel>
+</rss>
