@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="container-fluid pt-5">
+    <div class="row no-gutters">
+        <h1 class="article-title h3 col-12">{{.Title}}</h1>
+        <div class="col-12 text-secondary small">
+            {{if .Params.tags }}
+                {{ partial "tags" . }}
+            {{end}}
+        </div>
+        <div class="col-12 text-secondary pt-1">
+            <div>
+                    {{if .Params.tags }}
+                        {{ partial "date" . }}
+                    {{end}}
+                    {{if not (eq .Params.title "Mentees") }}
+                    <span class="pl-3">{{ partial "turtles" . }} {{ partial "readtime" . }} </span>
+                    {{end}}
+                </div>
+        </div> 
+    </div>
+</div>
+        <br />
+        {{if .Params.cover }}
+            {{ partial "coverimg" . }}  
+        {{end}} 
+        {{if eq .Params.title "Mentees" }}
+            {{ partial "mentee-form" . }}
+        {{else}}
+        <div class="container-fluid pt-3">
+                <div class="row no-gutters">        
+                    {{.Content}}  
+                </div>
+            </div>
+        {{end}}
+
+{{end}}
