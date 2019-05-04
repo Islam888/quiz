@@ -1,0 +1,13 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Quiz"
+PygmentsCodeFences = true
+pygmentsStyle = "monokai"
+[Taxonomies]
+  tag = "tags"
+  description = ""
+  cover = ""
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
