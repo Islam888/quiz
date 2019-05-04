@@ -1,6 +1,5 @@
 <html lang="en">
     <head>
-	<meta name="generator" content="Hugo 0.54.0" />
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -25,7 +24,7 @@
       
       <title>
     
-        Blue Turtle Quiz | Web Development Quizes By Islam Sayed
+        Q1 | Blue Turtle Blog
     
 </title>
     </head>
@@ -47,27 +46,12 @@
 </div>
 
             
-
-<div class="container-fluid pt-2">
+<div class="container-fluid pt-5">
     <div class="row no-gutters">
-        <p class="h6 subtitle">A web development blog by <a href="https://twitter.com/islam_sayed8"><em><strong>Islam Sayed</strong></em></a> </p>
-    </div>
-</div>
-
-
-    
-        
-<div class="container-fluid article-wrapper mt-5 py-2">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="h4 post-title"><a href="/js/q1/">Q1</a></h2>
-        </div>
-            <div class="col-12 text-secondary">
-
-                <time datetime="2018-8-10" class="small text-danger">May 4, 2019</time>
-                
-                
-                <span class="small">    <ul class="tags">
+        <h1 class="article-title h3 col-12">Q1</h1>
+        <div class="col-12 text-secondary small">
+            
+                    <ul class="tags">
         
             <li class="pr-3"><a class="text-danger" href="/tags/javascript">#javascript</a></li>
         
@@ -80,18 +64,91 @@
             <li class="pr-3"><a class="text-danger" href="/tags/sort">#sort</a></li>
         
     </ul>
-</span>
-            </div>
-            <div class="col-12">
 
-               <p class="mb-0 pt-1">
-    
-</p>
+            
+        </div>
+        <div class="col-12 text-secondary pt-1">
+            <div>
+                    
+                        <time datetime="2018-8-10" class="small text-danger">May 4, 2019</time>
+                    
+                    
+                    
+                </div>
+        </div> 
+    </div>
+</div>
+        <br />
+         
+        
+        <div class="container-fluid pt-3">
+                <div class="row no-gutters">        
+                    
+        <div class="col-12 py-2 para">
+            <p>Suppose the recruiter of your company asked you to create a function to:</p>
+
+<ol>
+<li>Select candidates that are from a certain country.</li>
+<li>Then sort them escendly by years of experience.</li>
+</ol>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#75715e">//Here is an array of candidates.
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">candidates</span> <span style="color:#f92672">=</span> [{
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Jane Austen&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">33</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;US&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">4</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Virginia Woolf&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">40</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UK&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">6</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Edgar Allan Poe&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">28</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;US&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Charlotte Brontë&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UK&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">3</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Emily Brontë&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">23</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UK&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Charles Dickens&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">42</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UK&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">8</span>
+    },
+    {
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;H. G. Wells&#34;</span>,
+        <span style="color:#a6e22e">age</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">45</span>,
+        <span style="color:#a6e22e">country</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UK&#34;</span>,
+        <span style="color:#a6e22e">yearsOfExperience</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">10</span>
+    }
+]
+</code></pre></div>
+
+        </div>
+
+<div class="container-fluid px-0">
+        <div class="row no-gutters">
+            <hr class="col-4"/>
+        </div>     
+    </div>
+  
+                </div>
             </div>
         
-    </div>
-</div>        
-    
 
 
             
